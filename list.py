@@ -8,3 +8,15 @@ fruits = ["apple", "banana", "cherry"]
 fruits.append("orange")
 fruits.insert(1, "mango")
 print(fruits)
+fruits.remove("banana")
+fruits.pop()
+print(fruits)
+
+print("NEW PROGRAM")
+
+marks = [2,3,4,5,6,7]
+print(len(marks))
+print(max(marks))
+print(min(marks))
+print(sum(marks))
+print(sum(marks)/len(marks))
