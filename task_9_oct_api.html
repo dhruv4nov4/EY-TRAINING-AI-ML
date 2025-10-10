@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students List</title>
+</head>
+<body>
+  <h2>Students</h2>
+  <button onclick="loadStudents()">Load Students</button>
+  <ul id="studentList"></ul>
+
+  <script>
+    async function loadStudents() {
+      const response = await fetch("http://127.0.0.1:8000/students");
+      const data = await response.json();
+      const students = data.students;
+
+      const list = document.getElementById("studentList");
+      list.innerHTML = ""; // clear old list
+
+      students.forEach(s => {
+        const item = document.createElement("li");
+        item.textContent = `${s.name} (Grade: ${s.grade})`;
+        list.appendChild(item);
+      });
+    }
+  </script>
+</body>
+</html>
