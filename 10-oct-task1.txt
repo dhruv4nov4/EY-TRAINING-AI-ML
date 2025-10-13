@@ -1,0 +1,66 @@
+Load balancing is a method used to spread incoming traffic across multiple servers or resources. This helps:
+
+- Prevent any single server from getting overwhelmed
+- Improve performance and reliability
+- Make systems more scalable
+
+A load balancer sits between users and servers, deciding which server should handle each request based on certain rules or strategies.
+
+Popular Load Balancing Methods
+
+1. Round Robin
+
+How it works:
+Requests are sent to servers one by one in a repeating cycle.
+
+Best for: 
+When all servers are equally powerful and handle tasks similarly.
+
+Example: 
+With servers A, B, and C, requests go like this:  
+A → B → C → A → B → C → ...
+
+Advantages:
+- Easy to set up
+- Fair distribution over time
+
+Limitations:
+- Doesn’t consider how busy each server is
+
+
+2. Least Connections
+
+How it works:
+The load balancer picks the server with the fewest active connections.
+
+Best for:
+Situations where tasks vary in length or intensity (like database queries or long sessions).
+
+Example:
+If Server A has 10 connections and Server B has 3, the next request goes to Server B.
+
+Advantages:
+- Adjusts based on real-time server load
+- More efficient under uneven workloads
+
+Limitations:
+- Needs to constantly monitor connection counts
+
+
+3. Random
+
+How it works: 
+Each request is sent to a randomly chosen server.
+
+Best for:
+When all servers are similar and tasks are short or evenly sized.
+
+Example:
+Requests are randomly assigned to A, B, or C.
+
+Advantages:
+- Very simple
+- No need to track server status
+
+Limitations:
+- Can cause uneven load temporarily due to randomness
