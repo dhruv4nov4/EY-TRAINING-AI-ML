@@ -1,0 +1,22 @@
+What is a Data Pipeline?
+Think of a data pipeline like a delivery route for data. It moves data from where it's created (like apps or sensors) to where it's needed (like dashboards or reports). Along the way, it collects, cleans, and reshapes the data.
+
+Main Steps in a Data Pipeline:
+- Ingestion: Collect data from various sources — databases, APIs, files, or devices.
+- Processing / Transformation: Clean and adjust the data — remove errors, change formats, or calculate new values.
+- Storage: Save the refined data in a central system like a data warehouse or data lake.
+- Consumption: Share the data with analysts, data scientists, or applications that use it.
+
+Example:  
+An e-commerce app gathers daily data on orders, payments, and customers. This data is cleaned and stored in a system like Snowflake. Later, analysts use tools like Power BI to explore sales trends and customer behavior.
+
+What is ETL (Extract, Transform, Load)?
+ETL is a specific type of data pipeline designed to prepare data for analysis. It involves pulling data from different places, refining it, and storing it in a structured format.
+
+ETL Process:
+- Extract: Get data from sources like MySQL databases, CSV files, or APIs.
+- Transform: Clean and organize the data — fix errors, merge tables, or calculate summaries.
+- Load: Put the cleaned data into a target system like Snowflake, Redshift, or BigQuery.
+
+Example:  
+Take customer and order data from MySQL and Salesforce → Combine them using customer IDs and calculate total sales by region → Store the final data in Snowflake for use in business reports.
