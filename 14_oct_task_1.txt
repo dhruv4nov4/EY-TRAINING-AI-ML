@@ -1,0 +1,36 @@
+Azure Queue Storage vs Azure Service Bus
+
+Azure Queue Storage
+- A basic queuing solution integrated with Azure Storage.
+- Communicates over HTTP or HTTPS protocols.
+- Message ordering is not guaranteed—attempts FIFO but not strictly enforced.
+- Lacks native support for duplicate message detection and transactional operations.
+- Maximum message size is 64 KB.
+- Ensures delivery at least once, but duplicates may occur.
+- No automatic dead-letter queue; must be managed manually.
+- Offers a straightforward FIFO structure with minimal features.
+- Cost-effective and well-suited for simple, loosely coupled systems.
+- Ideal for background tasks, basic message exchange, and lightweight architectures.
+
+Azure Service Bus
+- A robust messaging platform built for sophisticated communication needs.
+- Uses the AMQP protocol, with optional HTTP support.
+- Enables strict FIFO through session-based message sequencing.
+- Supports built-in duplicate detection and transactional messaging.
+- Message size limits: 256 KB (Standard) and up to 1 MB (Premium).
+- Provides both at-least-once and exactly-once delivery options.
+- Includes automatic dead-letter queues for handling failed messages.
+- Offers advanced capabilities like topics, subscriptions, scheduled delivery, and message forwarding.
+- Higher cost but packed with features for enterprise-grade reliability.
+- Best suited for distributed applications, financial systems, and publish/subscribe models.
+
+When to Choose Azure Queue Storage
+- You need a straightforward, budget-friendly queuing service.
+- Message order and duplication aren't major concerns.
+- Perfect for background job processing and lightweight service interactions.
+
+When to Choose Azure Service Bus
+- You require advanced messaging tools like pub/sub, transactions, or message filtering.
+- Message sequencing and duplicate prevention are essential.
+- Your system depends on dead-lettering and complex routing.
+- Designed for mission-critical workflows, microservices, and enterprise-grade solutions.
