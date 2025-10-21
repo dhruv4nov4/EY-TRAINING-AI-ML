@@ -1,0 +1,13 @@
+2025-10-21 09:16:47,052 - INFO -  Order processing started.
+2025-10-21 09:16:47,064 - INFO - New order received: O001
+2025-10-21 09:16:47,081 - INFO -  Processed Order O001 successfully with TotalPrice = 800.0
+2025-10-21 09:16:48,065 - INFO - New order received: O002
+2025-10-21 09:16:49,066 - INFO - New order received: O003
+2025-10-21 09:16:49,083 - INFO -  Processed Order O002 successfully with TotalPrice = 70.0
+2025-10-21 09:16:50,067 - INFO - New order received: O004
+2025-10-21 09:16:51,068 - INFO -  All orders pushed to queue.
+2025-10-21 09:16:51,084 - INFO -  Processed Order O003 successfully with TotalPrice = 100.0
+2025-10-21 09:16:53,086 - INFO -  Processed Order O004 successfully with TotalPrice = 150.0
+2025-10-21 09:17:00,096 - INFO - Queue empty. No more orders to process.
+2025-10-21 09:17:00,100 - INFO -  Saved 4 processed orders to processed_orders.csv
+2025-10-21 09:17:00,100 - INFO -  ETL process completed in 13.05 seconds.
