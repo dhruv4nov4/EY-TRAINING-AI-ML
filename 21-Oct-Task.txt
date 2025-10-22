@@ -1,0 +1,79 @@
+TASK 1
+
+LangChain is a Python-based framework that simplifies the development of AI applications by organizing and linking prompts for large language models (LLMs). It enables developers to build sophisticated workflows, intelligent agents, and chatbots with memory capabilities.
+
+PromptLayer complements LangChain by serving as a prompt engineering platform. It functions as middleware that records each prompt interaction, supports version control for prompt templates, tracks usage metrics, and offers visual analytics through a dashboard.
+
+Together, LangChain handles the creation and execution of prompt-driven workflows, while PromptLayer monitors and evaluates their performance. Their integration is facilitated by the `PromptLayerCallbackHandler` in LangChain, which automatically logs prompt activity to PromptLayer. This setup allows teams to assess prompt effectiveness, compare model outputs, and collaborate on prompt design more efficiently.
+
+In essence, LangChain builds the AI logic, and PromptLayer ensures that prompt engineering is transparent, measurable, and scalable for production environments.
+
+
+
+TASK 2
+
+1. What Is Prompting?
+
+Prompting is the practice of giving instructions or examples to a large language model (LLM) using natural or structured language to guide its output. It’s essentially how we “talk” to the model to get meaningful responses.
+
+Prompts can include:
+- Instructions or questions — e.g., “Write a poem about the ocean”
+- Context or examples — e.g., “Translate this text to French”
+- Constraints — e.g., “Keep it under 100 words”
+
+The quality of the prompt directly influences the model’s response — clearer prompts lead to more accurate and relevant results.
+
+2. Zero-shot Prompting
+
+Definition:
+This approach involves giving the model a task without any prior examples. The model relies solely on its existing knowledge.
+
+Example: 
+“Classify the sentiment of this review: The movie was amazing!”  
+The model should recognize this as a positive sentiment based on its training.
+
+Best used when:  
+The model is already familiar with the task type, such as classification, translation, or summarization.
+
+3. Few-shot Prompting
+
+Definition:  
+Here, you provide a few examples before asking the model to perform the task. This helps it understand the format or pattern you expect.
+
+Best used when:  
+The model isn’t specifically trained for the task, or when you want to guide it toward a particular tone, style, or structure.
+
+4. Chain-of-Thought (CoT) Prompting
+
+Definition: 
+This technique encourages the model to reason through a problem step-by-step before arriving at an answer. It’s especially effective for tasks involving logic, math, or multi-step reasoning.
+
+Example:  
+“Let’s think step by step:  
+A train travels 60 km in 1 hour. How long will it take to travel 180 km?”  
+The model might respond:  
+“60 km/hour → 180 ÷ 60 = 3 → It will take 3 hours.”
+
+Best used when: 
+The task requires detailed reasoning or multiple steps to solve.
+
+5. Prompt Tuning
+
+Definition: 
+Rather than manually crafting prompts, this method involves training small, learnable vectors (called soft prompts) that guide the model’s behavior for specific tasks.
+
+Think of it as:
+Optimizing the prompt itself, not the entire model.
+
+Types:
+1. Soft Prompt Tuning 
+   - Uses continuous embeddings (not readable text) that are trained via gradient descent.  
+   - Only the prompt is updated; the model remains unchanged.
+
+2. Prefix Tuning / P-tuning  
+   - A learned prefix is added to the input to influence the model’s output.
+
+Example use case:  
+Instead of retraining a massive 175-billion-parameter model, you can train a compact 10,000-parameter soft prompt tailored to a specific task — making it efficient and scalable.
+
+
