@@ -1,0 +1,35 @@
+
+
+1. Development Environment  
+   - Hosted on a virtual machine in the cloud  
+   - Used by developers to write and compile new code  
+   - Main tasks include coding, initial integration, local testing, and using automated pipelines for building and deploying
+
+2. Quality Assurance (QA) Environment  
+   - Runs on a separate cloud-based virtual machine  
+   - Designed to confirm the application behaves correctly  
+   - Activities involve testing the latest version, identifying and fixing bugs, and retesting until the system is stable and ready for the next phase
+
+3. Staging Environment  
+   - Another virtual machine in the cloud that replicates the production setup  
+   - Serves as the final checkpoint before user testing  
+   - Used to validate deployment procedures, configuration settings, and uncover any environment-specific problems
+
+4. User Acceptance Testing (UAT)  
+   - Involves end-users or business representatives checking the system  
+   - Focuses on performance through load and stress testing  
+   - Ensures the application meets business needs and gets approval for the next stage
+
+5. Pre-Production Environment (PPE)  
+   - Hosted on a cloud-based virtual machine  
+   - Acts as the last testing phase before going live  
+   - Includes final checks using production-like data, regression testing, and verifying deployment and rollback mechanisms
+
+6. Production Environment  
+   - The live system accessed by actual users  
+   - Marks the official launch of the application  
+   - Involves monitoring performance, reviewing logs, handling errors, and applying updates or fixes through automated pipelines
+
+CI/CD Pipeline Summary  
+- Continuous Integration streamlines the process of building, testing, and merging code changes, helping catch problems early  
+- Continuous Deployment or Delivery automates the rollout of updates to testing and live environments, ensuring reliability and minimizing manual errors
