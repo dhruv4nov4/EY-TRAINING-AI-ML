@@ -1,0 +1,87 @@
+TASK 1
+
+An AI agent is a software system that operates independently, interacting with its surroundings, collecting information, and carrying out tasks to meet specific objectives. These agents often rely on AI models to reason and act. Their memory enables them to store and retrieve information, including previous interactions and contextual details, which helps them adapt, learn, and improve decision-making over time.
+
+AI agents make use of various tools—such as functions, APIs, devices, or applications—that help them gather data, analyze it, or take action. These tools connect agents to external systems and enhance their ability to solve problems effectively.
+
+Agentic AI refers to systems designed to function autonomously, respond in real time, and tackle complex, multi-step challenges based on broad goals. Unlike traditional or generative AI, agentic AI integrates reasoning, planning, memory, and tool usage to actively pursue objectives. It often involves multiple agents working together within intricate workflows.
+
+AI agents are built to sense their environment, interpret data, reason through tasks, and take action to fulfill their goals. They typically include a language model for understanding and reasoning, a planning component to break down goals, and a memory system to retain and recall relevant information.
+
+Memory in AI agents can take several forms: short-term memory for immediate context, long-term memory for accumulated knowledge and past interactions, episodic memory for specific events, and consensus memory shared among agents. These memory types help agents maintain context, tailor decisions to individual needs, and improve performance through experience.
+
+Tools used by AI agents include external resources like APIs, databases, and devices. These tools allow agents to access information, perform calculations, or interact with the real world. Examples include search engines, customer relationship management systems, and automation platforms. The agent decides which tools to use based on the task requirements.
+
+Agentic AI represents a shift toward AI systems that act independently, plan and remember, make informed decisions, and carry out actions to achieve complex goals without needing constant human input. Unlike generative AI, which mainly produces content in response to prompts, agentic AI is proactive and goal-driven. It may use generative AI as one of many tools within a broader system.
+
+Practical applications of agentic AI include automated customer service, smart workflow management, and dynamic business process optimization.
+
+
+TASK 2
+
+
+Hugging Face is a widely used platform and open-source community focused on artificial intelligence and machine learning. It is recognized for offering tools and libraries that simplify the process of using, sharing, and deploying AI models.
+
+Key components include:
+
+- Model Hub: A central location where developers and researchers can upload and download pre-trained models for tasks such as text generation, image classification, and speech analysis.
+
+- Datasets Hub: A repository of datasets available for training and evaluating models.
+
+- Spaces: A hosting service for interactive applications and demonstrations built with AI.
+
+Some of the most popular libraries provided by Hugging Face are:
+
+- Transformers: Designed for working with natural language processing and multimodal models.
+
+- Datasets: Helps users easily load and manipulate datasets.
+
+- Evaluate: Offers tools for assessing model performance.
+
+Hugging Face brings together the global AI community, making advanced machine learning resources accessible to a broad audience. With just a few lines of Python code, users can load powerful models like GPT or BERT.
+
+Spaces on Hugging Face are interactive web applications that allow users to present, test, and share AI models in an accessible format.
+
+Notable features include:
+
+1. Built using Gradio or Streamlit, allowing for simple interface creation without needing web development experience.
+
+2. Live demonstrations that run directly in the browser.
+
+3. Options to make a Space public or keep it private.
+
+4. Seamless integration with Hugging Face models and datasets.
+
+The goal of Spaces is to enable developers, researchers, and organizations to share AI demos that others can explore immediately.
+
+Examples of what a Space might do include:
+
+- Translating a typed sentence
+
+- Generating a caption for an uploaded image
+
+- Transcribing spoken input from a microphone
+
+Spaces help make AI models more approachable by turning them into interactive tools.
+
+Hugging Face also provides datasets, which are structured collections of data used to train, test, and evaluate machine learning models.
+
+These datasets can include:
+
+- Text data such as articles, reviews, or encyclopedic entries
+
+- Image data labeled for computer vision tasks
+
+- Audio data like speech recordings
+
+- Tabular data in formats like CSV
+
+Features of Hugging Face datasets include:
+
+1. Simple loading with a single line of code using the datasets library
+
+2. Built-in tools for cleaning, splitting, and transforming data
+
+3. The ability to upload and share datasets with the community
+
+These datasets are designed to be ready-to-use, helping developers and researchers save time. For instance, the IMDB dataset can be used to train a model that determines whether a movie review is positive or negative.

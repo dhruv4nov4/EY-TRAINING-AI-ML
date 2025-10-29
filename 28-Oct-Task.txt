@@ -1,0 +1,47 @@
+A single-agent system is made up of one autonomous unit that interacts with its environment to accomplish specific tasks. It observes its surroundings, processes information, and acts independently to reach its goals.
+
+Main characteristics include:
+- Centralized decision-making
+- Simple control and coordination
+- Easier to build and train
+- Limited ability to scale or adapt in complex scenarios
+
+Examples of single-agent systems include personal voice assistants, autonomous drones, and recommendation engines.
+
+In contrast, a multi-agent system consists of several agents that may cooperate, compete, or work independently to achieve their own or shared objectives. Each agent has its own view and partial understanding of the environment.
+
+Key traits of multi-agent systems include:
+- Distributed control
+- Communication and coordination among agents
+- Emergent group intelligence
+- Better scalability and resilience in complex settings
+
+Examples include delivery robot fleets, traffic control networks, and decentralized healthcare monitoring systems.
+
+Comparison Overview:
+
+| Feature              | Single-Agent System        | Multi-Agent System                     |
+|-------------------- -|----------------------------|----------------------------------------|
+| Decision-making      | Centralized                | Distributed                            |
+| Scalability          | Limited                    | High scalability                       |
+| Communication        | Not necessary              | Crucial                                |
+| Complexity           | Relatively simple          | More complex due to coordination       |
+| Fault tolerance      | Low                        | High, thanks to redundancy             |
+| Learning             | Individual learning        | Collaborative or competitive learning  |
+
+Applications in different domains:
+
+Healthcare:
+- Single-agent systems include diagnostic tools for medical imaging, mental health chatbots, and personalized medication reminders.
+- Multi-agent systems support hospital operations through coordination among staff and logistics, wearable devices sharing patient data, and simulations for epidemic control.
+
+Mobility and smart cities:
+- Single-agent systems involve autonomous vehicles making decisions on their own, route planning for individual deliveries, and traffic lights using local sensors.
+- Multi-agent systems enable vehicle fleets to coordinate and reduce congestion, optimize ride-sharing and dispatching, manage drone deliveries, and synchronize traffic signals across a city.
+
+Customer service:
+- Single-agent systems handle basic tasks like answering FAQs, recommending products, and assisting users through voice commands.
+- Multi-agent systems involve networks of specialized bots working together, systems that transfer support between humans and AI, and intelligent call centers that manage tasks like routing and sentiment analysis.
+
+Summary:
+Single-agent systems are best suited for focused, well-defined tasks. Multi-agent systems perform well in dynamic, large-scale, or collaborative environments. The emerging trend is toward hybrid systems that combine individual intelligence with cooperative capabilities, such as connected healthcare agents or networked vehicles.

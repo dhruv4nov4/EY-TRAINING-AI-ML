@@ -1,0 +1,51 @@
+TASK 1
+
+Responsible AI is about ensuring that artificial intelligence systems operate in ways that are ethical, fair, transparent, and safe. It involves thoughtful design, deployment, and monitoring of AI technologies to reflect human values and societal expectations.
+
+Bias
+
+Bias arises when an AI system consistently produces unfair or skewed outcomes due to issues in data, model design, or human input.
+
+Common types of bias include:
+- Data bias: Occurs when the training data disproportionately represents certain groups.
+- Algorithmic bias: Happens when the model’s structure reinforces or embeds bias.
+- Societal bias: Emerges when human prejudices influence the system through labeling or contextual decisions.
+
+Ways to reduce bias:
+- Use datasets that are diverse and representative
+- Apply fairness metrics such as demographic parity or equalized odds
+- Perform regular audits to detect and address bias
+- Ensure human oversight in critical decision-making processes
+
+Hallucinations
+
+AI hallucinations refer to instances where a model generates information that is false, misleading, or fabricated, yet seems believable.
+
+Typical causes include:
+- Lack of connection to verified sources
+- Overgeneralization from training data
+- Absence of factual or up-to-date context
+
+Methods to prevent hallucinations:
+- Use retrieval-augmented generation to anchor outputs in real data
+- Include confidence indicators or source citations
+- Add fact-checking mechanisms before presenting results
+
+Explainability (XAI)
+
+Explainability involves making AI decisions clear and comprehensible to people, which is essential for building trust, ensuring accountability, and meeting regulatory standards.
+
+Forms of explanation:
+- Global explanations: Describe how the model functions overall
+- Local explanations: Clarify why a specific decision was made
+
+Techniques for enhancing explainability:
+- Use tools like SHAP and LIME to analyze feature importance
+- Favor transparent models when possible
+- Employ visual aids such as decision trees, attention maps, or influence diagrams
+
+Guardrails, Moderation, and Safety Layers
+
+These are built-in safeguards that help maintain ethical boundaries, prevent harmful outputs, and ensure AI behavior aligns with human goals.
+
+Responsible AI combines fairness (eliminating bias), truthfulness (avoiding hallucinations), clarity (ensuring explainability), and safety (through moderation and guardrails). This integrated approach helps create AI systems that are reliable, transparent, and centered around human needs.
