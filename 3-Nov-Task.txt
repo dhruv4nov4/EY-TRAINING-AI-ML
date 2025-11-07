@@ -1,0 +1,24 @@
+Autogen is a framework developed by Microsoft that helps developers create systems where multiple AI agents—and even humans—can work together using large language models. Instead of relying on a single AI to respond, Autogen allows you to build teams of agents, each with its own responsibilities, skills, and behavior, to tackle complex tasks collaboratively.
+
+Key features
+
+Autogen excels at enabling multiple agents to collaborate. You can assign different roles to each agent, such as a coder, tester, or manager, and give them specific goals or instructions. The framework lets you customize how each agent behaves, what tools it can access, and how it interacts with others. Once the setup is complete, agents can carry on conversations and reasoning automatically until the task is done.
+
+It also supports scenarios where a human can step in to review or approve actions. Autogen connects with external tools and APIs, allowing agents to perform tasks like running Python code, retrieving data, or working with databases. It supports various model providers including OpenAI, Azure OpenAI, Anthropic, and local models, and offers logging and debugging to monitor agent activity.
+
+Functions
+
+Agents are the main components in Autogen. Each agent can be defined with a role, a system message, and access to specific tools. The framework handles communication between agents using built-in classes. There are specialized types of agents, such as:
+
+- FunctionCallingAgent, which can execute Python functions
+- ToolAgent, which interacts with APIs or external systems
+- UserProxyAgent, which represents a human in the system
+
+All these agents are coordinated by a ChatManager, which oversees the entire conversation flow.
+
+Use cases
+
+Autogen is versatile and can be applied in many areas. For automation, it can manage multi-step workflows like report generation or data cleaning. In software development, one agent might write code while another tests or reviews it. In research or business analysis, agents can divide tasks such as data gathering, summarizing, and document preparation.
+
+In customer service, one agent could handle routine questions while another deals with more complex issues. For creative work, agents might brainstorm ideas, refine them, and format the final output. Autogen is useful wherever coordinated efforts between AI agents—and optionally humans—are needed to complete tasks.
+
